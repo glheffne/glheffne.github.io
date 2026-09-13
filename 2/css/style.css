@@ -1,1 +1,9 @@
-temp
+/* 1. Make the unordered list look like a horizontal navigation bar */
+
+nav ul {
+
+list-style-type: none;
+
+display: flex;
+
+}
