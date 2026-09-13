@@ -91,3 +91,20 @@ width: 400px;
 height: 400px;
 
 }
+/* 7. Position the span on the image */
+
+div {
+
+position: relative;
+
+}
+
+span {
+
+position: absolute;
+
+right: 0;
+
+bottom: 0;
+
+}
