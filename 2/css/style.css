@@ -68,3 +68,10 @@ padding-right: 30em;
 }
 
 */
+/* 4c. Set the final padding for the list items */
+
+nav li {
+
+padding: 10px 30px;
+
+}
