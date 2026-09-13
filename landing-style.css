@@ -28,4 +28,28 @@ text-align: center;
 border: 1px solid black;
 
 }
+footer {
+
+background-color: navy;
+
+color: white;
+
+text-align: center;
+
+position: fixed;
+
+bottom: 0;
+
+left: 0;
+
+width: 100%;
+
+padding: 10px;
+
+}
+footer p {
+
+margin: 0;
+
+}
 
