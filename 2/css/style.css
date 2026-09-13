@@ -75,3 +75,10 @@ nav li {
 padding: 10px 30px;
 
 }
+/* 5. Move the paragraph in the footer to the right side */
+
+footer p {
+
+text-align: right;
+
+}
