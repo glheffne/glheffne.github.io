@@ -7,3 +7,12 @@ list-style-type: none;
 display: flex;
 
 }
+/* 2. Change the background color behind the li text */
+
+nav li {
+
+background-color: navy;
+
+color: white;
+
+}
