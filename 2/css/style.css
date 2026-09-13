@@ -82,3 +82,12 @@ footer p {
 text-align: right;
 
 }
+/* 6. Adjust the height and width of the image to 400 x 400 */
+
+img {
+
+width: 400px;
+
+height: 400px;
+
+}
