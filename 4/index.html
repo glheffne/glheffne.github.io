@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gabe Heffner">
     <meta name="description"
         content="Explore Central Asian culture and cuisine through Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan.">
+    <meta name="keywords"
+        content="Central Asia, Kazakhstan, Kyrgyzstan, Turkmenistan, Uzbekistan, culture, cuisine, traditional food">
+
     <title>Central Asian Culture &amp; Cuisine</title>
 
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,62 +24,122 @@
         <p>Explore the food and culture of Central Asia</p>
     </header>
 
- <main>
-    <section class="intro">
-        <h2>Explore Central Asia</h2>
-        <p>
-            Choose a country to explore its traditional cuisine and cultural
-            connections.
-        </p>
-    </section>
+    <main>
 
-    <section class="country-selection">
-        <h2>Choose a Country</h2>
+        <section class="login-panel">
+            <h2>Welcome</h2>
 
-        <div class="country-grid">
+            <p>
+                Log in to explore traditional foods and cultural connections
+                from Central Asia.
+            </p>
 
-            <article class="country-card">
-                <h3>Kazakhstan</h3>
-                <p>
-                    Explore traditional foods and cultural influences from
-                    Kazakhstan.
-                </p>
-                <a href="kazakhstan.html">Explore Kazakhstan</a>
-            </article>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter your email">
+                </div>
 
-            <article class="country-card">
-                <h3>Kyrgyzstan</h3>
-                <p>
-                    Explore traditional foods and cultural influences from
-                    Kyrgyzstan.
-                </p>
-                <a href="kyrgyzstan.html">Explore Kyrgyzstan</a>
-            </article>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                        placeholder="Enter your password">
+                </div>
 
-            <article class="country-card">
-                <h3>Turkmenistan</h3>
-                <p>
-                    Explore traditional foods and cultural influences from
-                    Turkmenistan.
-                </p>
-                <a href="turkmenistan.html">Explore Turkmenistan</a>
-            </article>
+                <button type="button">Log In</button>
+            </form>
 
-            <article class="country-card">
-                <h3>Uzbekistan</h3>
-                <p>
-                    Explore traditional foods and cultural influences from
-                    Uzbekistan.
-                </p>
-                <a href="uzbekistan.html">Explore Uzbekistan</a>
-            </article>
+            <p class="mock-note">
+                Demo login for a future version of the application.
+            </p>
+        </section>
 
-        </div>
-    </section>
-</main>
+        <section class="intro">
+            <h2>Explore Central Asia</h2>
+
+            <p>
+                Discover traditional foods and cultural connections from
+                Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan.
+                Choose a country below to begin exploring.
+            </p>
+        </section>
+
+        <figure class="featured-image">
+            <img src="images/central-asia-map.png"
+                alt="Map showing countries in Central Asia">
+
+            <figcaption>
+                Map of Central Asia.
+                <cite>Wikimedia Commons</cite>
+            </figcaption>
+        </figure>
+
+        <section class="country-selection">
+            <h2>Choose a Country</h2>
+
+            <div class="country-grid">
+
+                <article class="country-card">
+                    <h3>Kazakhstan</h3>
+
+                    <p>
+                        Explore traditional foods and cultural influences
+                        from Kazakhstan.
+                    </p>
+
+                    <a href="kazakhstan.html">
+                        Explore Kazakhstan
+                    </a>
+                </article>
+
+                <article class="country-card">
+                    <h3>Kyrgyzstan</h3>
+
+                    <p>
+                        Explore traditional foods and cultural influences
+                        from Kyrgyzstan.
+                    </p>
+
+                    <a href="kyrgyzstan.html">
+                        Explore Kyrgyzstan
+                    </a>
+                </article>
+
+                <article class="country-card">
+                    <h3>Turkmenistan</h3>
+
+                    <p>
+                        Explore traditional foods and cultural influences
+                        from Turkmenistan.
+                    </p>
+
+                    <a href="turkmenistan.html">
+                        Explore Turkmenistan
+                    </a>
+                </article>
+
+                <article class="country-card">
+                    <h3>Uzbekistan</h3>
+
+                    <p>
+                        Explore traditional foods and cultural influences
+                        from Uzbekistan.
+                    </p>
+
+                    <a href="uzbekistan.html">
+                        Explore Uzbekistan
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <p>&copy; 2026 Central Asian Culture &amp; Cuisine</p>
+        <p>Created by Gabe Heffner</p>
     </footer>
 
 </body>
