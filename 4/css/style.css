@@ -36,15 +36,118 @@ main {
     margin: 2rem auto;
 }
 
-.intro {
+.login-panel {
+    max-width: 550px;
+    margin: 0 auto 3rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-panel h2 {
+    margin-top: 0;
+    color: #6b3f2a;
     text-align: center;
+}
+
+.login-panel > p {
+    text-align: center;
+}
+
+.login-panel form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font: inherit;
+    border: 1px solid #a99e91;
+    border-radius: 6px;
+}
+
+.form-group input:focus {
+    outline: 3px solid #d6a84b;
+    outline-offset: 2px;
+}
+
+.login-panel button {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #6b3f2a;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-panel button:hover {
+    background-color: #8a5438;
+}
+
+.login-panel button:focus {
+    outline: 3px solid #d6a84b;
+    outline-offset: 3px;
+}
+
+.mock-note {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    color: #625b52;
+}
+
+.intro {
     max-width: 750px;
     margin: 0 auto 2rem;
+    text-align: center;
 }
 
 .intro h2 {
-    color: #6b3f2a;
     margin-bottom: 0.5rem;
+    color: #6b3f2a;
+}
+
+.featured-image {
+    max-width: 800px;
+    margin: 2rem auto 3rem;
+}
+
+.featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.featured-image figcaption {
+    margin-top: 0.6rem;
+    color: #5b554d;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.featured-image cite {
+    font-style: italic;
+}
+
+.country-selection h2,
+.food-selection h2 {
+    text-align: center;
+    color: #6b3f2a;
 }
 
 .country-grid,
@@ -78,11 +181,11 @@ main {
 .food-card a,
 .page-navigation a {
     display: inline-block;
+    padding: 0.7rem 1rem;
     background-color: #6b3f2a;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.7rem 1rem;
     border-radius: 6px;
 }
 
@@ -100,11 +203,11 @@ main {
 }
 
 .food-details {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
     background-color: white;
     border-left: 5px solid #6b3f2a;
     border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -133,20 +236,24 @@ main {
 }
 
 footer {
+    margin-top: 3rem;
+    padding: 1.25rem;
     background-color: #2f2a24;
     color: white;
     text-align: center;
-    padding: 1.25rem;
-    margin-top: 3rem;
 }
 
 footer p {
-    margin: 0;
+    margin: 0.25rem 0;
 }
 
 @media (min-width: 600px) {
     header h1 {
         font-size: 2.5rem;
+    }
+
+    .login-panel {
+        padding: 2rem;
     }
 
     .country-grid,
@@ -181,5 +288,16 @@ footer p {
     .country-card,
     .food-card {
         padding: 2rem;
+    }
+
+    .country-card {
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .country-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
     }
 }
