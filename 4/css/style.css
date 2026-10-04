@@ -18,7 +18,7 @@ header {
     background-color: #6b3f2a;
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
 }
 
 header h1 {
@@ -36,13 +36,150 @@ main {
     margin: 2rem auto;
 }
 
+.intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 2rem;
+}
+
+.intro h2 {
+    color: #6b3f2a;
+    margin-bottom: 0.5rem;
+}
+
+.country-grid,
+.food-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.country-card,
+.food-card {
+    background-color: white;
+    border: 1px solid #ddd4c5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.country-card h3,
+.food-card h3 {
+    margin-top: 0;
+    color: #6b3f2a;
+}
+
+.country-card p,
+.food-card p {
+    margin-bottom: 1.5rem;
+}
+
+.country-card a,
+.food-card a,
+.page-navigation a {
+    display: inline-block;
+    background-color: #6b3f2a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+}
+
+.country-card a:hover,
+.food-card a:hover,
+.page-navigation a:hover {
+    background-color: #8a5438;
+}
+
+.country-card a:focus,
+.food-card a:focus,
+.page-navigation a:focus {
+    outline: 3px solid #d6a84b;
+    outline-offset: 3px;
+}
+
+.food-details {
+    background-color: white;
+    border-left: 5px solid #6b3f2a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.food-details h2 {
+    margin-top: 0;
+    color: #6b3f2a;
+}
+
+.food-details ul {
+    padding-left: 1.5rem;
+}
+
+.food-details li {
+    margin-bottom: 0.4rem;
+}
+
+.page-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.page-navigation a {
+    text-align: center;
+}
+
 footer {
     background-color: #2f2a24;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.25rem;
+    margin-top: 3rem;
 }
 
 footer p {
     margin: 0;
+}
+
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .country-grid,
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-navigation {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        padding: 3.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        margin: 3rem auto;
+    }
+
+    .country-grid,
+    .food-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .country-card,
+    .food-card {
+        padding: 2rem;
+    }
 }
