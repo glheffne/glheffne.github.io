@@ -1,4 +1,4 @@
-// Fetch the snowboarding information from JSON
+// Fetch snowboarding information from the JSON file
 async function loadBoardingData() {
     const response = await fetch("js/boardingData.json");
 
@@ -9,38 +9,38 @@ async function loadBoardingData() {
     return await response.json();
 }
 
-// Update the webpage using the JSON information
+// Update the webpage using JSON information
 function updatePage(data) {
 
-    // Update the browser title
+    // Update browser title
     document.title = data.title;
 
-    // Update the main header
+    // Update main header
     document.getElementById("styleName").textContent =
         data.header;
 
-    // Update the hero section
+    // Update hero section
     document.getElementById("heroTitle").textContent =
         data.hero.headline;
 
     document.getElementById("heroDesc").textContent =
         data.hero.description;
 
-    // Update the Overview section
+    // Update Overview section
     document.getElementById("sec1Title").textContent =
         data.sections.overview.title;
 
     document.getElementById("sec1Subtitle").textContent =
         data.sections.overview.subtitle;
 
-    // Update the Equipment section
+    // Update Equipment section
     document.getElementById("sec2Title").textContent =
         data.sections.equipment.title;
 
     document.getElementById("sec2Subtitle").textContent =
         data.sections.equipment.subtitle;
 
-    // Update the Overview cards
+    // Update Overview cards
     const overviewCards =
         document.querySelectorAll("#sec1Grid .card");
 
@@ -52,7 +52,7 @@ function updatePage(data) {
             card.description;
     });
 
-    // Update the Equipment cards
+    // Update Equipment cards
     const equipmentCards =
         document.querySelectorAll("#sec2Grid .card");
 
@@ -65,29 +65,44 @@ function updatePage(data) {
     });
 }
 
-// Change the background image using the CSS variable
+// Change the hero background image
 function updateBackground(data) {
     const hero = document.getElementById("heroSection");
 
+    // Get the image path from JSON and resolve it
+    // relative to the JSON file's directory
+    const imageURL = new URL(
+        data.hero.image,
+        new URL("js/boardingData.json", document.baseURI)
+    ).href;
+
+    // Update the CSS background image variable
     hero.style.setProperty(
         "--hero-img",
-        'url("img/alpineBoarding.jpg")'
+        `url("${imageURL}")`
     );
+
+    console.log("Background image updated:", imageURL);
 }
 
-// Run when the Change button is clicked
+// Change skiing information to snowboarding
 async function changeToSnowboarding() {
     try {
         const data = await loadBoardingData();
 
+        // Update text and cards
         updatePage(data);
+
+        // Update background image
         updateBackground(data);
 
+        console.log("Page successfully changed to snowboarding!");
+
     } catch (error) {
-        console.error("Error loading snowboarding data:", error);
+        console.error("Error updating webpage:", error);
     }
 }
 
-// Connect the Change button to the JavaScript function
+// Connect the Change button to JavaScript
 document.getElementById("changeThemeBtn")
     .addEventListener("click", changeToSnowboarding);
