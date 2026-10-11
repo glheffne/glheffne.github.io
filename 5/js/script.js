@@ -69,12 +69,9 @@ function updatePage(data) {
 function updateBackground(data) {
     const hero = document.getElementById("heroSection");
 
-    // Convert the JSON image path to the correct CSS path
-    const imagePath = data.hero.image.replace("../img/", "img/");
-
     hero.style.setProperty(
         "--hero-img",
-        `url("${imagePath}")`
+        'url("img/alpineBoarding.jpg")'
     );
 }
 
