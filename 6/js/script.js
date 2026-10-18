@@ -25,18 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
         return element;
     }
 
-    // Update the status message for loading, errors, or instructions.
+    // Update the message describing the application's current state.
     function updateStatus(message) {
         statusMessage.textContent = message;
     }
 
-    // Hide the food details and clear previously displayed information.
+    // Remove previously displayed food details.
     function clearDetails() {
         detailsContainer.replaceChildren();
         detailsSection.hidden = true;
     }
 
-    // Display a button that reloads the JSON if loading fails.
+    // Display a retry button if the JSON request fails.
     function showRetryButton() {
         const retryButton = createElement("button", "Try Again");
         retryButton.type = "button";
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         selectionContainer.replaceChildren(retryButton);
     }
 
-    // Load the external JSON file using fetch and Promises.
+    // Load the country and food information from the external JSON file.
     function loadFoodData() {
         updateStatus("Loading country information...");
         selectionContainer.replaceChildren();
@@ -74,11 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateStatus(
                     "Food information could not be loaded. Please try again."
                 );
+
                 showRetryButton();
             });
     }
 
-    // Display the available countries as clickable buttons.
+    // Display country cards using information and images from JSON.
     function showCountries() {
         selectedCountry = null;
         selectionContainer.replaceChildren();
@@ -93,8 +94,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         countries.forEach((country) => {
             const card = createElement("article", "", "country-card");
+
+            const image = document.createElement("img");
+            image.src = country.image;
+            image.alt = `Traditional food from ${country.name}`;
+            image.className = "country-image";
+            image.loading = "lazy";
+
             const heading = createElement("h3", country.name);
             const description = createElement("p", country.description);
+
             const button = createElement(
                 "button",
                 `Explore ${country.name}`
@@ -105,12 +114,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 showFoods(country);
             });
 
-            card.append(heading, description, button);
+            card.append(image, heading, description, button);
             selectionContainer.appendChild(card);
         });
     }
 
-    // Display the four traditional foods for the selected country.
+    // Display the traditional dishes associated with one country.
     function showFoods(country) {
         selectedCountry = country;
         selectionContainer.replaceChildren();
@@ -129,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = createElement("article", "", "food-card");
             const heading = createElement("h3", food.name);
             const description = createElement("p", food.description);
+
             const button = createElement(
                 "button",
                 `Learn About ${food.name}`
@@ -144,20 +154,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Display the description, ingredients, and cultural significance.
+    // Display the selected dish's information without changing pages.
     function showFoodDetails(food) {
         clearDetails();
 
         const heading = createElement("h3", food.name);
         const descriptionHeading = createElement("h4", "Description");
         const description = createElement("p", food.description);
+
         const ingredientsHeading = createElement("h4", "Ingredients");
         const ingredientsList = document.createElement("ul");
+
         const significanceHeading = createElement(
             "h4",
             "Cultural Significance"
         );
-        const significance = createElement("p", food.culturalSignificance);
+
+        const significance = createElement(
+            "p",
+            food.culturalSignificance
+        );
 
         food.ingredients.forEach((ingredient) => {
             const listItem = createElement("li", ingredient);
@@ -182,17 +198,14 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // Return to the country selection screen.
+    // Return to the initial country selection screen.
     function restartSelection() {
         showCountries();
     }
 
-    // Return from the food selection screen to the country list.
     backButton.addEventListener("click", restartSelection);
-
-    // Allow visitors to explore another country.
     restartButton.addEventListener("click", restartSelection);
 
-    // Start the application by loading its JSON data.
+    // Initialize the application after the HTML has loaded.
     loadFoodData();
 });
