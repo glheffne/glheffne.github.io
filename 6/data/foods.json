@@ -1,1 +1,250 @@
-
+{
+  "countries": [
+    {
+      "id": "kazakhstan",
+      "name": "Kazakhstan",
+      "description": "Kazakh cuisine reflects the country's nomadic heritage, with an emphasis on meat, dairy products, and filling meals.",
+      "image": "img/kazakhstan-food.jpg",
+      "foods": [
+        {
+          "id": "kazakhstan-beshbarmak",
+          "name": "Beshbarmak",
+          "description": "A traditional dish made with boiled meat served over broad noodles and topped with onion broth.",
+          "ingredients": [
+            "Beef or lamb",
+            "Wide noodles",
+            "Onions",
+            "Broth",
+            "Salt and pepper"
+          ],
+          "culturalSignificance": "Beshbarmak is often served at celebrations and family gatherings. It reflects Kazakhstan's nomadic traditions and the importance of hospitality."
+        },
+        {
+          "id": "kazakhstan-baursaki",
+          "name": "Baursaki",
+          "description": "Small pieces of dough fried until golden brown, commonly served with tea or alongside other dishes.",
+          "ingredients": [
+            "Flour",
+            "Milk or water",
+            "Yeast",
+            "Salt",
+            "Oil"
+          ],
+          "culturalSignificance": "Baursaki are commonly prepared for holidays, weddings, and family gatherings. They symbolize hospitality and are often shared with guests."
+        },
+        {
+          "id": "kazakhstan-kazy",
+          "name": "Kazy",
+          "description": "A traditional sausage made from seasoned horse meat, commonly boiled and served in slices.",
+          "ingredients": [
+            "Horse meat",
+            "Horse fat",
+            "Salt",
+            "Black pepper",
+            "Natural sausage casing"
+          ],
+          "culturalSignificance": "Kazy is considered a valued traditional food in Kazakhstan and is frequently served during celebrations and special occasions."
+        },
+        {
+          "id": "kazakhstan-kuurdak",
+          "name": "Kuurdak",
+          "description": "A hearty dish made by frying meat with onions, sometimes including potatoes and organ meats.",
+          "ingredients": [
+            "Lamb or beef",
+            "Onions",
+            "Potatoes",
+            "Oil or animal fat",
+            "Seasonings"
+          ],
+          "culturalSignificance": "Kuurdak reflects traditional livestock-based cooking and is often prepared as a filling meal shared among family members."
+        }
+      ]
+    },
+    {
+      "id": "kyrgyzstan",
+      "name": "Kyrgyzstan",
+      "description": "Kyrgyz cuisine combines nomadic food traditions with influences from neighboring Central Asian cultures.",
+      "image": "img/kyrgyzstan-food.jpg",
+      "foods": [
+        {
+          "id": "kyrgyzstan-beshbarmak",
+          "name": "Beshbarmak",
+          "description": "Boiled meat served with handmade noodles and broth, often prepared for important gatherings.",
+          "ingredients": [
+            "Lamb or beef",
+            "Handmade noodles",
+            "Onions",
+            "Meat broth",
+            "Salt"
+          ],
+          "culturalSignificance": "Beshbarmak is a significant traditional meal in Kyrgyzstan and represents hospitality, respect for guests, and nomadic heritage."
+        },
+        {
+          "id": "kyrgyzstan-kuurdak",
+          "name": "Kuurdak",
+          "description": "A traditional fried meat dish prepared with onions and sometimes potatoes.",
+          "ingredients": [
+            "Beef or lamb",
+            "Onions",
+            "Potatoes",
+            "Oil",
+            "Salt and pepper"
+          ],
+          "culturalSignificance": "Kuurdak has roots in nomadic cooking and remains a popular meal at home and during social gatherings."
+        },
+        {
+          "id": "kyrgyzstan-lagman",
+          "name": "Lagman",
+          "description": "A noodle dish featuring vegetables and meat in a flavorful sauce or broth.",
+          "ingredients": [
+            "Noodles",
+            "Beef or lamb",
+            "Bell peppers",
+            "Tomatoes",
+            "Onions",
+            "Garlic"
+          ],
+          "culturalSignificance": "Lagman reflects cultural exchange along Central Asian trade routes and the influence of Uyghur and other regional cooking traditions."
+        },
+        {
+          "id": "kyrgyzstan-ashlan-fu",
+          "name": "Ashlan-Fu",
+          "description": "A cold noodle dish with a tangy, spicy broth, often made with both wheat noodles and starch noodles.",
+          "ingredients": [
+            "Wheat noodles",
+            "Starch noodles",
+            "Vinegar",
+            "Chili",
+            "Vegetables"
+          ],
+          "culturalSignificance": "Ashlan-Fu is especially associated with Karakol and reflects Dungan culinary influences in Kyrgyzstan."
+        }
+      ]
+    },
+    {
+      "id": "turkmenistan",
+      "name": "Turkmenistan",
+      "description": "Turkmen cuisine features meat, bread, rice, and soups shaped by pastoral traditions and regional influences.",
+      "image": "img/turkmenistan-food.jpg",
+      "foods": [
+        {
+          "id": "turkmenistan-plov",
+          "name": "Plov",
+          "description": "A rice dish cooked with meat, carrots, onions, and seasonings.",
+          "ingredients": [
+            "Rice",
+            "Lamb or beef",
+            "Carrots",
+            "Onions",
+            "Oil",
+            "Spices"
+          ],
+          "culturalSignificance": "Plov is commonly prepared for family meals, celebrations, and gatherings. It represents hospitality and shared food traditions."
+        },
+        {
+          "id": "turkmenistan-dograma",
+          "name": "Dograma",
+          "description": "A traditional dish combining shredded meat, pieces of flatbread, onions, and broth.",
+          "ingredients": [
+            "Lamb",
+            "Flatbread",
+            "Onions",
+            "Meat broth",
+            "Salt"
+          ],
+          "culturalSignificance": "Dograma is closely associated with Turkmen hospitality and is often prepared for special gatherings and celebrations."
+        },
+        {
+          "id": "turkmenistan-manty",
+          "name": "Manty",
+          "description": "Steamed dumplings filled with seasoned meat and onions.",
+          "ingredients": [
+            "Flour",
+            "Water",
+            "Ground lamb or beef",
+            "Onions",
+            "Salt and pepper"
+          ],
+          "culturalSignificance": "Manty are part of a broader Central Asian dumpling tradition and are often prepared and enjoyed together by families."
+        },
+        {
+          "id": "turkmenistan-chorba",
+          "name": "Chorba",
+          "description": "A hearty soup typically made with meat, vegetables, and broth.",
+          "ingredients": [
+            "Lamb or beef",
+            "Potatoes",
+            "Carrots",
+            "Onions",
+            "Broth",
+            "Seasonings"
+          ],
+          "culturalSignificance": "Chorba is a traditional comfort food that reflects the importance of hearty soups in everyday Turkmen cooking."
+        }
+      ]
+    },
+    {
+      "id": "uzbekistan",
+      "name": "Uzbekistan",
+      "description": "Uzbek cuisine is known for rice dishes, breads, dumplings, and noodles influenced by Silk Road trade and agricultural traditions.",
+      "image": "img/uzbekistan-food.jpg",
+      "foods": [
+        {
+          "id": "uzbekistan-plov",
+          "name": "Plov",
+          "description": "A famous Uzbek rice dish cooked with meat, carrots, onions, and spices.",
+          "ingredients": [
+            "Rice",
+            "Lamb or beef",
+            "Carrots",
+            "Onions",
+            "Oil",
+            "Cumin"
+          ],
+          "culturalSignificance": "Plov is an important symbol of Uzbek hospitality and community. It is frequently served at weddings, holidays, and other celebrations."
+        },
+        {
+          "id": "uzbekistan-samsa",
+          "name": "Samsa",
+          "description": "A baked pastry filled with seasoned meat, onions, or other ingredients.",
+          "ingredients": [
+            "Flour",
+            "Water",
+            "Lamb or beef",
+            "Onions",
+            "Salt",
+            "Spices"
+          ],
+          "culturalSignificance": "Samsa is a popular street food and traditional baked dish, often prepared in a clay tandoor oven."
+        },
+        {
+          "id": "uzbekistan-lagman",
+          "name": "Lagman",
+          "description": "A noodle dish served with meat and vegetables in a seasoned sauce or broth.",
+          "ingredients": [
+            "Noodles",
+            "Beef or lamb",
+            "Tomatoes",
+            "Bell peppers",
+            "Onions",
+            "Garlic"
+          ],
+          "culturalSignificance": "Lagman reflects the cultural diversity of Uzbekistan and the historical exchange of cooking traditions along the Silk Road."
+        },
+        {
+          "id": "uzbekistan-manti",
+          "name": "Manti",
+          "description": "Large steamed dumplings traditionally filled with meat and onions.",
+          "ingredients": [
+            "Flour",
+            "Water",
+            "Ground lamb or beef",
+            "Onions",
+            "Salt and pepper"
+          ],
+          "culturalSignificance": "Manti are commonly prepared for family meals and gatherings, reflecting the importance of shared cooking and dining traditions."
+        }
+      ]
+    }
+  ]
+}
