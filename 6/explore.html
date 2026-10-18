@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gabe Heffner">
+    <meta name="description"
+        content="Interactively explore traditional foods from Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan.">
+
+    <title>Explore Foods | Central Asian Culture &amp; Cuisine</title>
+
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Traditional Foods</h1>
+        <p>Discover the cuisines of Central Asia</p>
+    </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="explore.html" aria-current="page">
+            Explore Foods
+        </a>
+        <a href="culture.html">Culture</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <section class="intro">
+            <h2>Choose a Country</h2>
+
+            <p>
+                Select one of the four Central Asian countries
+                to discover its traditional foods. After choosing
+                a country, select a dish to learn about its
+                ingredients and cultural significance.
+            </p>
+        </section>
+
+        <section class="country-selection"
+            aria-labelledby="selection-heading">
+
+            <h2 id="selection-heading">
+                Explore Central Asian Cuisine
+            </h2>
+
+            <p id="status-message" role="status" aria-live="polite">
+                Loading country information...
+            </p>
+
+            <div id="selection-container" class="country-grid">
+                <!-- JavaScript will add country and food buttons here. -->
+            </div>
+
+        </section>
+
+        <section id="details-section"
+            class="food-details"
+            aria-labelledby="details-heading"
+            hidden>
+
+            <h2 id="details-heading">Food Details</h2>
+
+            <div id="details-container">
+                <!-- JavaScript will display food information here. -->
+            </div>
+
+        </section>
+
+        <div class="page-navigation">
+            <button id="back-button" type="button" hidden>
+                Back
+            </button>
+
+            <button id="restart-button" type="button" hidden>
+                Choose Another Country
+            </button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Central Asian Culture &amp; Cuisine</p>
+        <p>Created by Gabe Heffner</p>
+    </footer>
+
+</body>
+
+</html>
