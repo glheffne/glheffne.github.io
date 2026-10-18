@@ -1,1 +1,309 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f1e8;
+    color: #2f2a24;
+}
+
+/* Header */
+header {
+    background-color: #6b3f2a;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Main navigation */
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #e6d6bf;
+}
+
+.site-nav a {
+    display: inline-block;
+    padding: 0.65rem 1rem;
+    color: #4b2c1e;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    background-color: #6b3f2a;
+    color: white;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2,
+h3,
+h4 {
+    color: #583522;
+}
+
+/* Introductory sections */
+.intro,
+.culture-section,
+.login-panel {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #ddd4c5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.intro h2,
+.culture-section h2,
+.login-panel h2 {
+    margin-top: 0;
+}
+
+/* Login form */
+.login-panel {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #8c8175;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.mock-note {
+    color: #5c554e;
+    font-size: 0.9rem;
+}
+
+/* Shared buttons and links */
+button,
+.primary-link,
+.page-navigation a {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: #6b3f2a;
+    color: white;
+    border: 2px solid #6b3f2a;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover,
+.primary-link:hover,
+.page-navigation a:hover {
+    background-color: #4b2c1e;
+    border-color: #4b2c1e;
+}
+
+/* Keyboard accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #b45309;
+    outline-offset: 3px;
+}
+
+/* Featured image */
+.featured-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.featured-image img {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.featured-image figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #5c554e;
+}
+
+/* Country and food selection */
+.country-selection {
+    margin-bottom: 2rem;
+}
+
+.country-grid,
+.food-grid,
+.culture-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.country-card,
+.food-card,
+.culture-card {
+    min-width: 0;
+    background-color: white;
+    border: 1px solid #ddd4c5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.country-card h3,
+.food-card h3,
+.culture-card h3 {
+    margin-top: 0;
+}
+
+.country-card button,
+.food-card button {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* Status messages */
+#status-message {
+    padding: 0.75rem 1rem;
+    background-color: #e6d6bf;
+    border-left: 4px solid #6b3f2a;
+    border-radius: 4px;
+}
+
+/* Food information */
+.food-details {
+    padding: 1.5rem;
+    background-color: white;
+    border-left: 5px solid #6b3f2a;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.food-details h2 {
+    margin-top: 0;
+}
+
+.food-details ul {
+    padding-left: 1.5rem;
+}
+
+.food-details li {
+    margin-bottom: 0.4rem;
+}
+
+/* Back and restart buttons */
+.page-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Keep elements with the hidden attribute invisible */
+[hidden] {
+    display: none !important;
+}
+
+/* Footer */
+footer {
+    background-color: #6b3f2a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* Tablet layout */
+@media (min-width: 600px) {
+    .country-grid,
+    .food-grid,
+    .culture-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .intro,
+    .culture-section,
+    .login-panel {
+        padding: 2rem;
+    }
+}
+
+/* Desktop layout */
+@media (min-width: 1000px) {
+    .country-grid,
+    .food-grid,
+    .culture-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Small-screen adjustments */
+@media (max-width: 599px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .site-nav a {
+        flex: 1 1 40%;
+        text-align: center;
+    }
+
+    .page-navigation button {
+        width: 100%;
+    }
+}
