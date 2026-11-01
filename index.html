@@ -4,96 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSCI 3054 Activities and Projects</title>
+
     <meta name="author" content="Gabe Heffner">
     <meta name="description"
-        content="A landing page for CSCI 3054 course activities and projects.">
-    <link rel="stylesheet" href="landing-style.css">
+        content="Explore Central Asian culture and cuisine through Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan.">
+    <meta name="keywords"
+        content="Central Asia, Kazakhstan, Kyrgyzstan, Turkmenistan, Uzbekistan, culture, cuisine, traditional food">
+
+    <title>Central Asian Culture &amp; Cuisine</title>
+
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="module" src="js/auth-ui.js"></script>
 </head>
 
 <body>
 
     <header>
-        <h1>CSCI 3054</h1>
-        <p>Web Development Activities and Projects</p>
-        <p class="student-name">Gabe Heffner</p>
+        <h1>Central Asian Culture &amp; Cuisine</h1>
+        <p>Explore the food and culture of Central Asia</p>
     </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="explore.html">Explore Foods</a>
+        <a href="culture.html">Culture</a>
+        <a href="contact.html">Contact</a>
+        <button type="button" class="nav-login" data-login-open aria-haspopup="dialog">Log In</button>
+    </nav>
 
     <main>
 
-        <section class="projects">
-            <h2>My Projects</h2>
+        <section class="intro">
+            <h2>Explore Central Asia</h2>
 
-            <div class="project-grid">
+            <p>
+                Discover traditional foods and cultural connections
+                from Kazakhstan, Kyrgyzstan, Turkmenistan, and
+                Uzbekistan.
+            </p>
 
-                <article class="project-card">
-                    <p class="project-label">Project 1</p>
-                    <h3>Josuke Higashikata</h3>
-                    <p>
-                        My first CSCI 3054 web development project.
-                    </p>
-                    <a href="1/">View Project</a>
-                </article>
-
-                <article class="project-card">
-                    <p class="project-label">Activity 2</p>
-                    <h3>Web Development Activity</h3>
-                    <p>
-                        An HTML and CSS development activity.
-                    </p>
-                    <a href="2/">View Activity</a>
-                </article>
-
-                <article class="project-card">
-                    <p class="project-label">Project 2</p>
-                    <h3>Central Asian Culture &amp; Cuisine</h3>
-                    <p>
-                        My proposal for an interactive website exploring
-                        Central Asian culture and cuisine.
-                    </p>
-                    <a href="3/">View Project</a>
-                </article>
-
-                <article class="project-card">
-                    <p class="project-label">Project 3</p>
-                    <h3>Central Asian Culture &amp; Cuisine</h3>
-                    <p>
-                        The interactive implementation of my Central Asian
-                        culture and cuisine project.
-                    </p>
-                    <a href="4/">View Project</a>
-                </article>
-
-                <article class="project-card">
-    <p class="project-label">Activity 4</p>
-    <h3>Alpine Skiing &amp; Snowboarding</h3>
-    <p>
-        An interactive webpage that uses JavaScript,
-        JSON data, and DOM manipulation to change
-        Alpine Skiing content into Alpine Snowboarding.
-    </p>
-    <a href="5/">View Activity</a>
-</article>
-                <article class="project-card">
-    <p class="project-label">Project 4</p>
-    <h3>Central Asian Culture &amp; Cuisine — Interactive Food Explorer</h3>
-    <p>
-        An interactive web application that allows users to
-        explore traditional foods from Kazakhstan, Kyrgyzstan,
-        Turkmenistan, and Uzbekistan. Built using HTML, CSS,
-        JavaScript, and JSON with dynamic content and AJAX.
-    </p>
-    <a href="6/">View Project</a>
-</article>
-
-            </div>
-
+            <p>
+                Sign in to access our Firebase-backed Explore Foods page and choose a country
+                and discover its traditional dishes.
+            </p>
         </section>
 
+        <figure class="featured-image">
+            <img src="img/central-asia-map.png"
+                alt="Map showing countries in Central Asia">
+
+            <figcaption>
+                Map of Central Asia.
+                <cite>Wikimedia Commons</cite>
+            </figcaption>
+        </figure>
+
+        <section class="intro">
+            <h2>Start Exploring</h2>
+
+            <p>
+                Learn about traditional foods from Kazakhstan,
+                Kyrgyzstan, Turkmenistan, and Uzbekistan.
+                Select a country and then choose a dish to
+                discover its ingredients and cultural significance. Account sign-in is required for the interactive explorer and contact submissions.
+            </p>
+
+            <a class="primary-link" href="explore.html">
+                Explore Traditional Foods
+            </a>
+        </section>
+
+        <section class="intro" aria-labelledby="firebase-heading">
+            <h2 id="firebase-heading">Project 5: Powered by Firebase</h2>
+            <p>Create an account or sign in to explore foods loaded from Cloud Firestore, then send feedback that's safely stored in the database.</p>
+            <button type="button" data-login-open>Get Started: Log In or Sign Up</button>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Gabe Heffner</p>
+        <p>&copy; 2026 Central Asian Culture &amp; Cuisine</p>
+        <p>Created by Gabe Heffner</p>
     </footer>
 
 </body>
