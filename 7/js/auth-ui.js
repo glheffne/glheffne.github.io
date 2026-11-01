@@ -13,8 +13,8 @@ dialog.innerHTML = `
         <h2 id="firebase-login-heading">Account</h2>
         <button type="button" class="login-close" data-login-close aria-label="Close account dialog">&times;</button>
     </div>
-    <p class="mock-note">Create an account to explore foods from Firebase and securely submit feedback.</p>
-    <p class="firebase-warning" id="firebase-setup-warning" hidden>Firebase is not connected yet. The project owner must add the configuration in js/firebase.js.</p>
+    <p class="mock-note">Create a free account to discover traditional foods and share your questions or suggestions.</p>
+    <p class="firebase-warning" id="firebase-setup-warning" hidden>Account services are temporarily unavailable. Please try again later.</p>
     <form id="firebase-login-form">
         <div class="form-group"><label for="firebase-email">Email</label>
             <input type="email" id="firebase-email" name="email" autocomplete="email" required></div>
@@ -65,7 +65,7 @@ dialog.addEventListener("click", (event) => { if (event.target === dialog) dialo
 if (!firebaseConfigured) {
     dialog.querySelector("#firebase-setup-warning").hidden = false;
     loginForm.querySelectorAll("button").forEach(button => button.disabled = true);
-    buttons.forEach(button => button.textContent = "Firebase Setup Needed");
+    buttons.forEach(button => button.textContent = "Account Unavailable");
 } else {
     onAuthStateChanged(auth, (user) => {
         const loggedIn = Boolean(user);
@@ -73,7 +73,7 @@ if (!firebaseConfigured) {
         signedInPanel.hidden = !loggedIn;
         dialog.querySelector("#firebase-signed-in-email").textContent = user?.email || "";
         dialog.querySelector("#firebase-verify-status").textContent = user
-            ? user.emailVerified ? "Email verified." : "Verify your email to import the initial food data."
+            ? user.emailVerified ? "Email verified." : "Please verify your email to finish setting up your account."
             : "";
         dialog.querySelector("#firebase-verification").hidden = !user || user.emailVerified;
         buttons.forEach(button => button.textContent = loggedIn ? "My Account" : "Log In");
@@ -96,7 +96,7 @@ loginForm.addEventListener("submit", async (event) => {
             setMessage("Account created and signed in! Check your inbox to verify your email.");
         } else {
             await signInWithEmailAndPassword(auth, email, password);
-            setMessage("Signed in successfully. You can now explore foods or send feedback.");
+            setMessage("Welcome back! You can now explore the food guide or get in touch.");
         }
         passwordInput.value = "";
     } catch (error) {

@@ -31,10 +31,10 @@ export function friendlyError(error) {
         "auth/email-already-in-use": "This email already has an account. Try signing in.",
         "auth/weak-password": "Choose a stronger password (at least six characters).",
         "auth/too-many-requests": "Too many attempts. Please try again later.",
-        "auth/network-request-failed": "A network problem interrupted Firebase. Check your connection.",
-        "auth/unauthorized-domain": "This website is not an authorized Firebase domain. Add it in Firebase Authentication settings.",
-        "permission-denied": "Firebase denied access. Check your sign-in status and Firestore security rules.",
-        "unavailable": "Firebase is temporarily unavailable. Check your connection and try again."
+        "auth/network-request-failed": "A network problem interrupted the request. Check your connection.",
+        "auth/unauthorized-domain": "Sign-in is not available on this website right now. Please contact the site owner.",
+        "permission-denied": "You do not have permission to complete this action. Please check your account and try again.",
+        "unavailable": "The service is temporarily unavailable. Check your connection and try again."
     };
-    return descriptions[error?.code] || error?.message || "An unexpected Firebase error occurred.";
+    return descriptions[error?.code] || error?.message || "Something went wrong. Please try again.";
 }

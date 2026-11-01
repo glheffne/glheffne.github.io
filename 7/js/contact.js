@@ -19,13 +19,13 @@ function busy(working) {
 }
 if (!firebaseConfigured) {
     gate.hidden = false;
-    setStatus("Firebase isn't connected yet. The site owner needs to enter the Firebase config.", true);
+    setStatus("The contact form is temporarily unavailable. Please try again later.", true);
 } else {
     onAuthStateChanged(auth, (user) => {
         gate.hidden = Boolean(user);
         form.hidden = !user;
         emailInput.value = user?.email || "";
-        setStatus(user ? "Signed in. Complete the form to save your message in Firebase." :
+        setStatus(user ? "Ready when you are. Fill in the form to send us your message." :
             "Please sign in before sending a message.");
     }, (error) => setStatus(friendlyError(error), true));
 }
@@ -44,7 +44,7 @@ form.addEventListener("submit", async (event) => {
         return;
     }
     busy(true);
-    setStatus("Saving your message to Firebase...");
+    setStatus("Sending your message...");
     try {
         const result = await addDoc(collection(db, "contactMessages"), {
             uid: user.uid,
@@ -56,8 +56,8 @@ form.addEventListener("submit", async (event) => {
         });
         form.reset();
         emailInput.value = user.email;
-        setStatus(`Your message was saved successfully! Confirmation ID: ${result.id}`);
+        setStatus(`Thank you! Your message has been received and saved. Reference number: ${result.id}`);
     } catch (error) {
-        setStatus(`Your message wasn't saved: ${friendlyError(error)}`, true);
+        setStatus(`We couldn't send your message: ${friendlyError(error)}`, true);
     } finally { busy(false); }
 });

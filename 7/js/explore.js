@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load country and dish documents directly from Firestore, not the local JSON file.
     async function loadFoodData() {
         if (!auth?.currentUser) return;
-        updateStatus("Loading food data from Firebase...");
+        updateStatus("Loading traditional foods...");
         statusMessage.classList.add("is-loading");
         selectionContainer.replaceChildren();
         clearDetails();
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const snapshot = await getDocs(collection(db, "countries"));
             if (snapshot.empty) {
-                updateStatus("No food data is stored yet. The site owner needs to run the one-time data import.");
+                updateStatus("Our food guide is temporarily unavailable. Please check back soon.");
                 return;
             }
             const order = ["kazakhstan", "kyrgyzstan", "turkmenistan", "uzbekistan"];
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             showCountries();
         } catch (error) {
-            updateStatus(`Food data couldn't be retrieved: ${friendlyError(error)}`);
+            updateStatus(`We couldn't load the food guide: ${friendlyError(error)}`);
             showRetryButton();
         } finally {
             statusMessage.classList.remove("is-loading");
@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Don't read database content until Firebase finishes checking authentication.
     if (!firebaseConfigured) {
-        updateStatus("Firebase isn't connected yet. Add your Firebase config to js/firebase.js.");
+        updateStatus("The food guide is temporarily unavailable. Please try again later.");
     } else {
         onAuthStateChanged(auth, (user) => {
             gate.hidden = Boolean(user);
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 clearDetails();
                 backButton.hidden = true;
                 restartButton.hidden = true;
-                updateStatus("Please log in to load food information from Firebase.");
+                updateStatus("Sign in to explore traditional foods from across Central Asia.");
             }
         }, (error) => updateStatus(friendlyError(error)));
     }
