@@ -21,6 +21,7 @@ header {
     color: white;
     text-align: center;
     padding: 2.5rem 1rem;
+    border-bottom: 5px solid #f0bc63;
 }
 
 header h1 {
@@ -73,7 +74,7 @@ h4 {
     color: #583522;
 }
 
-/* Introductory sections */
+/* Main sections */
 .intro,
 .culture-section,
 .login-panel {
@@ -81,6 +82,7 @@ h4 {
     padding: 1.5rem;
     border-radius: 10px;
     border: 1px solid #ddd4c5;
+    border-top: 3px solid #dca65d;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -144,10 +146,22 @@ button:hover,
     border-color: #4b2c1e;
 }
 
+.primary-link {
+    background-color: #ad4d2a;
+    border-color: #ad4d2a;
+}
+
+.primary-link:hover {
+    background-color: #81391e;
+    border-color: #81391e;
+}
+
 /* Keyboard accessibility */
 a:focus-visible,
 button:focus-visible,
-input:focus-visible {
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
     outline: 3px solid #b45309;
     outline-offset: 3px;
 }
@@ -173,7 +187,7 @@ input:focus-visible {
     color: #5c554e;
 }
 
-/* Country, food, and culture grids */
+/* Country, food and culture grids */
 .country-grid,
 .food-grid,
 .culture-grid {
@@ -182,13 +196,14 @@ input:focus-visible {
     gap: 1.5rem;
 }
 
-/* Country, food, and culture cards */
+/* Country, food and culture cards */
 .country-card,
 .food-card,
 .culture-card {
     min-width: 0;
     background-color: white;
     border: 1px solid #ddd4c5;
+    border-top: 3px solid #dca65d;
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
@@ -200,7 +215,7 @@ input:focus-visible {
     margin-top: 0;
 }
 
-/* Country card pictures */
+/* Country images */
 .country-image {
     display: block;
     width: 100%;
@@ -210,14 +225,12 @@ input:focus-visible {
     margin-bottom: 1rem;
 }
 
-/* Country and food selection buttons */
 .country-card button,
 .food-card button {
     width: 100%;
     margin-top: 0.5rem;
 }
 
-/* Interactive country selection section */
 .country-selection {
     margin-bottom: 2rem;
 }
@@ -230,7 +243,7 @@ input:focus-visible {
     border-radius: 4px;
 }
 
-/* Food information section */
+/* Food information */
 .food-details {
     padding: 1.5rem;
     background-color: white;
@@ -259,7 +272,6 @@ input:focus-visible {
     margin-bottom: 2rem;
 }
 
-/* Hide inactive sections and buttons */
 [hidden] {
     display: none !important;
 }
@@ -277,6 +289,291 @@ footer p {
     margin: 0.3rem 0;
 }
 
+/* Login navigation button */
+.site-nav .nav-login {
+    border: 2px solid #6b3f2a;
+    background-color: #6b3f2a;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0.55rem 1.1rem;
+    margin-left: 0.25rem;
+}
+
+.site-nav .nav-login:hover {
+    background-color: #4b2c1e;
+}
+
+/* Login popup */
+.login-dialog {
+    width: min(92vw, 460px);
+    max-height: min(90vh, 650px);
+    overflow-y: auto;
+    padding: 1.5rem;
+    background: #fff9ef;
+    border: 1px solid #c8ac91;
+    border-radius: 14px;
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.28);
+    color: #2f2a24;
+}
+
+.login-dialog::backdrop {
+    background: rgba(30, 20, 16, 0.7);
+}
+
+.login-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.login-dialog-header h2 {
+    margin: 0;
+}
+
+.login-dialog .login-close {
+    background: transparent;
+    color: #583522;
+    border: 1px solid #b9a693;
+    font-size: 1.6rem;
+    padding: 0.2rem 0.65rem;
+}
+
+.login-dialog .login-close:hover {
+    background: #f1dfc7;
+}
+
+.login-dialog .mock-note {
+    margin: 0.9rem 0 1.35rem;
+}
+
+.login-dialog input {
+    background: white;
+}
+
+.login-dialog .demo-login-submit {
+    width: 100%;
+}
+
+.login-dialog .login-feedback {
+    margin: 0.75rem 0 0;
+    font-weight: 600;
+}
+
+/* Food item images */
+.dish-image {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #ebdcc6;
+}
+
+.dish-detail-image {
+    display: block;
+    width: min(100%, 520px);
+    max-height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1rem 0 1.5rem;
+    background-color: #ebdcc6;
+}
+
+.food-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.food-card button {
+    margin-top: auto;
+}
+
+.food-card p {
+    flex: 1;
+}
+
+.food-details h4 {
+    margin-bottom: 0.35rem;
+}
+
+.food-details h4 + p {
+    margin-top: 0;
+}
+
+.image-disclosure {
+    font-size: 0.78rem;
+    color: #f7dfc3;
+}
+
+/* Contact page */
+.contact-main {
+    max-width: 1000px;
+}
+
+.contact-content {
+    margin: 1.2rem 0 3.2rem;
+}
+
+.contact-content h2 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    line-height: 1.15;
+    color: #251d19;
+    margin: 0 0 1.5rem;
+}
+
+.contact-intro {
+    font-size: 1.13rem;
+    line-height: 1.65;
+    margin: 0 0 2rem;
+}
+
+.contact-form {
+    max-width: 730px;
+}
+
+.contact-form .form-field {
+    margin-bottom: 1.45rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.18rem;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #8e8378;
+    border-radius: 3px;
+    color: #251d19;
+    padding: 0.95rem 1rem;
+    font: inherit;
+}
+
+.contact-form input,
+.contact-form select {
+    min-height: 60px;
+}
+
+.contact-form textarea {
+    min-height: 190px;
+    resize: vertical;
+}
+
+.contact-form .contact-submit {
+    border: 0;
+    border-radius: 2px;
+    background: #923e2d;
+    color: #fff;
+    padding: 1rem 1.6rem;
+    min-height: 56px;
+    font-weight: 700;
+}
+
+.contact-form .contact-submit:hover {
+    background: #702d21;
+}
+
+.contact-help {
+    font-size: 0.88rem;
+    color: #5d534b;
+    margin: 0.8rem 0 0;
+}
+
+#contact-status {
+    font-weight: bold;
+}
+
+.contact-direct {
+    border-top: 1px solid #d0c7bc;
+    padding-top: 1.2rem;
+    margin-top: 2rem;
+}
+
+.contact-direct h3 {
+    margin-top: 0;
+}
+
+.contact-direct a,
+.text-link {
+    color: #923e2d;
+    overflow-wrap: anywhere;
+    font-weight: 700;
+}
+
+.contact-support-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+}
+
+.contact-support-grid .culture-section {
+    margin: 0;
+}
+
+.contact-faq {
+    margin-top: 1.5rem;
+}
+
+.contact-faq h3 {
+    margin-bottom: 0.25rem;
+}
+
+.contact-faq h3 + p {
+    margin-top: 0;
+}
+
+/* New culture page image layout */
+.culture-feature {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.culture-feature-copy p:first-child {
+    margin-top: 0;
+}
+
+.culture-figure {
+    margin: 0;
+}
+
+.culture-figure img {
+    display: block;
+    width: 100%;
+    height: clamp(220px, 30vw, 330px);
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #e6d6bf;
+}
+
+.culture-figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #5c554e;
+}
+
+.culture-gallery {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.culture-gallery .culture-figure img {
+    height: 240px;
+}
+
 /* Tablet layout */
 @media (min-width: 600px) {
     .country-grid,
@@ -292,6 +589,28 @@ footer p {
     }
 }
 
+/* Contact two-column layout */
+@media (min-width: 760px) {
+    .contact-support-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Culture images side by side on larger screens */
+@media (min-width: 780px) {
+    .culture-feature {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .culture-feature.image-left .culture-figure {
+        order: -1;
+    }
+
+    .culture-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 /* Desktop layout */
 @media (min-width: 1000px) {
     .country-grid,
@@ -301,7 +620,7 @@ footer p {
     }
 }
 
-/* Small-screen adjustments */
+/* Mobile adjustments */
 @media (max-width: 599px) {
     header {
         padding: 2rem 1rem;
@@ -316,6 +635,11 @@ footer p {
         text-align: center;
     }
 
+    .site-nav .nav-login {
+        flex: 1 1 40%;
+        margin-left: 0;
+    }
+
     .page-navigation button {
         width: 100%;
     }
@@ -323,188 +647,21 @@ footer p {
     .country-image {
         height: 220px;
     }
-}
 
-/* November usability improvements */
-:root {
-    --warm-brown: #6b3f2a;
-    --accent-terracotta: #ad4d2a;
-    --accent-gold: #f0bc63;
-    --pale-sand: #fff9ef;
-    --text-dark: #2f2a24;
-}
-
-/* Warm accent without changing the original calming palette. */
-header { border-bottom: 5px solid var(--accent-gold); }
-.intro, .culture-section, .country-card, .food-card {
-    border-top: 3px solid #dca65d;
-}
-.primary-link { background-color: var(--accent-terracotta); border-color: var(--accent-terracotta); }
-.primary-link:hover { background-color: #81391e; border-color: #81391e; }
-
-/* Show a single login button in the navigation instead of a full-page form. */
-.site-nav .nav-login {
-    border: 2px solid var(--warm-brown);
-    background-color: var(--warm-brown);
-    color: white;
-    font: inherit;
-    font-weight: bold;
-    border-radius: 6px;
-    padding: 0.55rem 1.1rem;
-    margin-left: 0.25rem;
-}
-.site-nav .nav-login:hover { background: #4b2c1e; }
-
-/* Centered, accessible demo login dialog. */
-.login-dialog {
-    width: min(92vw, 460px);
-    max-height: min(90vh, 650px);
-    overflow-y: auto;
-    padding: 1.5rem;
-    background: var(--pale-sand);
-    border: 1px solid #c8ac91;
-    border-radius: 14px;
-    box-shadow: 0 20px 70px rgba(0,0,0,.28);
-    color: var(--text-dark);
-}
-.login-dialog::backdrop { background: rgba(30, 20, 16, .7); }
-.login-dialog-header { display:flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.login-dialog-header h2 { margin: 0; }
-.login-dialog .login-close {
-    background: transparent;
-    color: #583522;
-    border: 1px solid #b9a693;
-    font-size: 1.6rem;
-    padding: 0.2rem 0.65rem;
-}
-.login-dialog .login-close:hover { background: #f1dfc7; }
-.login-dialog .mock-note { margin: .9rem 0 1.35rem; }
-.login-dialog input { background: white; }
-.login-dialog .demo-login-submit { width: 100%; }
-.login-dialog .login-feedback { margin: 0.75rem 0 0; font-weight: 600; }
-
-/* Pictures for every food card and its expanded detail view. */
-.dish-image {
-    display: block;
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    background-color: #ebdcc6;
-}
-.dish-detail-image {
-    display: block;
-    width: min(100%, 520px);
-    max-height: 340px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 1rem 0 1.5rem;
-    background-color: #ebdcc6;
-}
-.food-card { display:flex; flex-direction:column; }
-.food-card button { margin-top: auto; }
-.food-card p { flex:1; }
-.food-details h4 { margin-bottom: .35rem; }
-.food-details h4 + p { margin-top: 0; }
-.image-disclosure { font-size: .78rem; color: #f7dfc3; }
-
-/* Contact form styled after the supplied cream-and-terracotta reference. */
-.contact-main { max-width: 1000px; }
-.contact-content { margin: 1.2rem 0 3.2rem; }
-.contact-content h2 {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    line-height: 1.15;
-    color: #251d19;
-    margin: 0 0 1.5rem;
-}
-.contact-intro { font-size: 1.13rem; line-height: 1.65; margin: 0 0 2rem; }
-.contact-form { max-width: 730px; }
-.contact-form .form-field { margin-bottom: 1.45rem; }
-.contact-form label { display: block; margin-bottom: .5rem; font-size: 1.18rem; font-weight: 600; }
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-    display: block;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #8e8378;
-    border-radius: 3px;
-    color: #251d19;
-    padding: .95rem 1rem;
-    font: inherit;
-}
-.contact-form input, .contact-form select { min-height: 60px; }
-.contact-form textarea { min-height: 190px; resize: vertical; }
-.contact-form .contact-submit {
-    border: 0;
-    border-radius: 2px;
-    background: #923e2d;
-    color: #fff;
-    padding: 1rem 1.6rem;
-    min-height: 56px;
-    font-weight: 700;
-}
-.contact-form .contact-submit:hover { background: #702d21; }
-.contact-help { font-size: .88rem; color: #5d534b; margin: .8rem 0 0; }
-#contact-status { font-weight: bold; }
-.contact-direct { border-top: 1px solid #d0c7bc; padding-top: 1.2rem; margin-top: 2rem; }
-.contact-direct h3 { margin-top: 0; }
-.contact-direct a, .text-link { color: #923e2d; overflow-wrap: anywhere; font-weight: 700; }
-.contact-support-grid { display:grid; grid-template-columns:1fr; gap: 1.3rem; }
-.contact-support-grid .culture-section { margin: 0; }
-.contact-faq { margin-top: 1.5rem; }
-.contact-faq h3 { margin-bottom: .25rem; }
-.contact-faq h3 + p { margin-top: 0; }
-select:focus-visible, textarea:focus-visible, .login-dialog:focus-visible {
-    outline: 3px solid #b45309;
-    outline-offset: 3px;
-}
-@media (min-width: 760px) {
-    .contact-support-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 599px) {
-    .site-nav .nav-login { flex: 1 1 40%; margin-left: 0; }
-    .contact-content { margin-top: 0; }
-    .contact-form label { font-size: 1.05rem; }
-    .contact-form input, .contact-form select { min-height: 52px; }
-    .dish-image { height: 240px; }
-}
-.culture-image-block {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    align-items: center;
-    margin-bottom: 2rem;
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: 1px solid #ddd4c5;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-}
-
-.culture-image-block img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.culture-image-text h2 {
-    margin-top: 0;
-    color: #583522;
-}
-
-@media (min-width: 800px) {
-    .culture-image-block {
-        grid-template-columns: 1fr 1fr;
+    .dish-image {
+        height: 240px;
     }
 
-    .culture-image-block.reverse img {
-        order: 2;
+    .contact-content {
+        margin-top: 0;
     }
 
-    .culture-image-block.reverse .culture-image-text {
-        order: 1;
+    .contact-form label {
+        font-size: 1.05rem;
+    }
+
+    .contact-form input,
+    .contact-form select {
+        min-height: 52px;
     }
 }
