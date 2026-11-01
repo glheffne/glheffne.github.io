@@ -17,7 +17,9 @@
             "Broth",
             "Salt and pepper"
           ],
-          "culturalSignificance": "Beshbarmak is often served at celebrations and family gatherings. It reflects Kazakhstan's nomadic traditions and the importance of hospitality."
+          "culturalSignificance": "Beshbarmak is often served at celebrations and family gatherings. It reflects Kazakhstan's nomadic traditions and the importance of hospitality.",
+          "image": "img/dishes/kazakhstan-beshbarmak.webp",
+          "preparation": "Meat is slowly simmered until tender, while broad noodles are cooked separately. The noodles are layered with sliced meat and onions softened in the cooking broth."
         },
         {
           "id": "kazakhstan-baursaki",
@@ -30,7 +32,9 @@
             "Salt",
             "Oil"
           ],
-          "culturalSignificance": "Baursaki are commonly prepared for holidays, weddings, and family gatherings. They symbolize hospitality and are often shared with guests."
+          "culturalSignificance": "Baursaki are commonly prepared for holidays, weddings, and family gatherings. They symbolize hospitality and are often shared with guests.",
+          "image": "img/dishes/kazakhstan-baursaki.webp",
+          "preparation": "A soft yeast dough is allowed to rise, cut into small pieces, and deep-fried until puffed and golden. The warm pieces are often shared with tea."
         },
         {
           "id": "kazakhstan-kazy",
@@ -43,7 +47,9 @@
             "Black pepper",
             "Natural sausage casing"
           ],
-          "culturalSignificance": "Kazy is considered a valued traditional food in Kazakhstan and is frequently served during celebrations and special occasions."
+          "culturalSignificance": "Kazy is considered a valued traditional food in Kazakhstan and is frequently served during celebrations and special occasions.",
+          "image": "img/dishes/kazakhstan-kazy.webp",
+          "preparation": "Seasoned horse meat and fat are packed into a natural casing and traditionally cured or dried before being gently cooked. The finished sausage is sliced for serving."
         },
         {
           "id": "kazakhstan-kuurdak",
@@ -56,7 +62,9 @@
             "Oil or animal fat",
             "Seasonings"
           ],
-          "culturalSignificance": "Kuurdak reflects traditional livestock-based cooking and is often prepared as a filling meal shared among family members."
+          "culturalSignificance": "Kuurdak reflects traditional livestock-based cooking and is often prepared as a filling meal shared among family members.",
+          "image": "img/dishes/kazakhstan-kuurdak.webp",
+          "preparation": "Small pieces of meat are browned in fat with onions, then cooked until tender. Potatoes are often added to create a substantial one-pan meal."
         }
       ]
     },
@@ -77,7 +85,9 @@
             "Meat broth",
             "Salt"
           ],
-          "culturalSignificance": "Beshbarmak is a significant traditional meal in Kyrgyzstan and represents hospitality, respect for guests, and nomadic heritage."
+          "culturalSignificance": "Beshbarmak is a significant traditional meal in Kyrgyzstan and represents hospitality, respect for guests, and nomadic heritage.",
+          "image": "img/dishes/kyrgyzstan-beshbarmak.webp",
+          "preparation": "Meat is simmered with water and seasonings until tender. Handmade noodles are boiled and served with meat, onion sauce, and a little broth."
         },
         {
           "id": "kyrgyzstan-kuurdak",
@@ -90,7 +100,9 @@
             "Oil",
             "Salt and pepper"
           ],
-          "culturalSignificance": "Kuurdak has roots in nomadic cooking and remains a popular meal at home and during social gatherings."
+          "culturalSignificance": "Kuurdak has roots in nomadic cooking and remains a popular meal at home and during social gatherings.",
+          "image": "img/dishes/kyrgyzstan-kuurdak.webp",
+          "preparation": "Meat and onions are fried together in a heavy pan, sometimes with potatoes. The dish is cooked until the meat is tender and the edges are lightly browned."
         },
         {
           "id": "kyrgyzstan-lagman",
@@ -104,7 +116,9 @@
             "Onions",
             "Garlic"
           ],
-          "culturalSignificance": "Lagman reflects cultural exchange along Central Asian trade routes and the influence of Uyghur and other regional cooking traditions."
+          "culturalSignificance": "Lagman reflects cultural exchange along Central Asian trade routes and the influence of Uyghur and other regional cooking traditions.",
+          "image": "img/dishes/kyrgyzstan-lagman.webp",
+          "preparation": "Wheat noodles are prepared separately, then topped with meat and vegetables cooked in a fragrant tomato-based sauce or broth."
         },
         {
           "id": "kyrgyzstan-ashlan-fu",
@@ -117,7 +131,9 @@
             "Chili",
             "Vegetables"
           ],
-          "culturalSignificance": "Ashlan-Fu is especially associated with Karakol and reflects Dungan culinary influences in Kyrgyzstan."
+          "culturalSignificance": "Ashlan-Fu is especially associated with Karakol and reflects Dungan culinary influences in Kyrgyzstan.",
+          "image": "img/dishes/kyrgyzstan-ashlan-fu.webp",
+          "preparation": "Wheat and starch noodles are cooled, then combined with a tangy vinegar-chili broth and garnishes. The dish is typically served chilled."
         }
       ]
     },
@@ -139,7 +155,9 @@
             "Oil",
             "Spices"
           ],
-          "culturalSignificance": "Plov is commonly prepared for family meals, celebrations, and gatherings. It represents hospitality and shared food traditions."
+          "culturalSignificance": "Plov is commonly prepared for family meals, celebrations, and gatherings. It represents hospitality and shared food traditions.",
+          "image": "img/dishes/turkmenistan-plov.webp",
+          "preparation": "Meat and onions are browned, carrots are softened, and rice is cooked with the seasoned ingredients in one pot until fluffy and fragrant."
         },
         {
           "id": "turkmenistan-dograma",
@@ -152,7 +170,9 @@
             "Meat broth",
             "Salt"
           ],
-          "culturalSignificance": "Dograma is closely associated with Turkmen hospitality and is often prepared for special gatherings and celebrations."
+          "culturalSignificance": "Dograma is closely associated with Turkmen hospitality and is often prepared for special gatherings and celebrations.",
+          "image": "img/dishes/turkmenistan-dograma.webp",
+          "preparation": "Cooked lamb is shredded and mixed with small pieces of bread and sliced onions. Hot meat broth is poured over the mixture just before serving."
         },
         {
           "id": "turkmenistan-manty",
@@ -165,7 +185,9 @@
             "Onions",
             "Salt and pepper"
           ],
-          "culturalSignificance": "Manty are part of a broader Central Asian dumpling tradition and are often prepared and enjoyed together by families."
+          "culturalSignificance": "Manty are part of a broader Central Asian dumpling tradition and are often prepared and enjoyed together by families.",
+          "image": "img/dishes/turkmenistan-manty.webp",
+          "preparation": "A simple dough is rolled thin, filled with seasoned meat and onion, and sealed into dumplings. The dumplings are then steamed until cooked through."
         },
         {
           "id": "turkmenistan-chorba",
@@ -179,7 +201,9 @@
             "Broth",
             "Seasonings"
           ],
-          "culturalSignificance": "Chorba is a traditional comfort food that reflects the importance of hearty soups in everyday Turkmen cooking."
+          "culturalSignificance": "Chorba is a traditional comfort food that reflects the importance of hearty soups in everyday Turkmen cooking.",
+          "image": "img/dishes/turkmenistan-chorba.webp",
+          "preparation": "Meat is simmered in broth with vegetables such as potatoes, carrots, and onions. Slow cooking develops a rich and comforting soup."
         }
       ]
     },
@@ -201,7 +225,9 @@
             "Oil",
             "Cumin"
           ],
-          "culturalSignificance": "Plov is an important symbol of Uzbek hospitality and community. It is frequently served at weddings, holidays, and other celebrations."
+          "culturalSignificance": "Plov is an important symbol of Uzbek hospitality and community. It is frequently served at weddings, holidays, and other celebrations.",
+          "image": "img/dishes/uzbekistan-plov.webp",
+          "preparation": "Meat, onions, and carrots are cooked in oil with seasonings. Rice is added and steamed above the mixture so the grains absorb the savory flavors."
         },
         {
           "id": "uzbekistan-samsa",
@@ -215,7 +241,9 @@
             "Salt",
             "Spices"
           ],
-          "culturalSignificance": "Samsa is a popular street food and traditional baked dish, often prepared in a clay tandoor oven."
+          "culturalSignificance": "Samsa is a popular street food and traditional baked dish, often prepared in a clay tandoor oven.",
+          "image": "img/dishes/uzbekistan-samsa.webp",
+          "preparation": "Seasoned fillings are enclosed in folded pastry and baked until golden, traditionally against the walls of a hot clay oven called a tandyr."
         },
         {
           "id": "uzbekistan-lagman",
@@ -229,7 +257,9 @@
             "Onions",
             "Garlic"
           ],
-          "culturalSignificance": "Lagman reflects the cultural diversity of Uzbekistan and the historical exchange of cooking traditions along the Silk Road."
+          "culturalSignificance": "Lagman reflects the cultural diversity of Uzbekistan and the historical exchange of cooking traditions along the Silk Road.",
+          "image": "img/dishes/uzbekistan-lagman.webp",
+          "preparation": "Wheat noodles are served with a sautéed mix of meat, tomatoes, peppers, and onions. It may be prepared as a soup or with a thicker sauce."
         },
         {
           "id": "uzbekistan-manti",
@@ -242,7 +272,9 @@
             "Onions",
             "Salt and pepper"
           ],
-          "culturalSignificance": "Manti are commonly prepared for family meals and gatherings, reflecting the importance of shared cooking and dining traditions."
+          "culturalSignificance": "Manti are commonly prepared for family meals and gatherings, reflecting the importance of shared cooking and dining traditions.",
+          "image": "img/dishes/uzbekistan-manti.webp",
+          "preparation": "Large meat-filled dumplings are wrapped in thin dough and steamed. They are commonly served warm with yogurt, sour cream, or a simple sauce."
         }
       ]
     }
