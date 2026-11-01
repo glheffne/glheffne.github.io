@@ -1,107 +1,68 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Gabe Heffner">
-    <meta name="description"
-        content="Interactively explore traditional foods from Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan.">
-
-    <title>Explore Foods | Central Asian Culture &amp; Cuisine</title>
-
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
-
-    <script type="module" src="js/auth-ui.js"></script>
-    <script type="module" src="js/explore.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Gabe Heffner" name="author"/>
+<meta content="Interactively explore traditional foods from Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan." name="description"/>
+<title>Explore Foods | Central Asian Culture &amp; Cuisine</title>
+<link href="img/favicon.png" rel="icon" type="image/png"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script src="js/auth-ui.js" type="module"></script>
+<script src="js/explore.js" type="module"></script>
 </head>
-
 <body>
-
-    <header>
-        <h1>Explore Traditional Foods</h1>
-        <p>Discover the cuisines of Central Asia</p>
-    </header>
-
-    <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="explore.html" aria-current="page">
+<header>
+<h1>Explore Traditional Foods</h1>
+<p>Every dish has a story. Discover yours.</p>
+</header>
+<nav aria-label="Main navigation" class="site-nav">
+<a href="index.html">Home</a>
+<a aria-current="page" href="explore.html">
             Explore Foods
         </a>
-        <a href="culture.html">Culture</a>
-        <a href="contact.html">Contact</a>
-        <button type="button" class="nav-login" data-login-open aria-haspopup="dialog">Log In</button>
-    </nav>
-
-    <main>
-
-        <section class="intro">
-            <h2>Choose a Country</h2>
-
-            <p>
-                Sign in to access the Firebase food explorer. Select one of the four Central Asian countries
-                to discover its traditional foods. After choosing
-                a country, select a dish to learn about its
-                ingredients and cultural significance.
-            </p>
-        </section>
-
-        <section class="country-selection"
-            aria-labelledby="selection-heading">
-
-            <h2 id="selection-heading">
-                Explore Central Asian Cuisine
-            </h2>
-
-            <p id="status-message" role="status" aria-live="polite">
+<a href="culture.html">Culture</a>
+<a href="contact.html">Contact</a>
+<button aria-haspopup="dialog" class="nav-login" data-login-open="" type="button">Log In</button>
+</nav>
+<main>
+<section class="intro">
+<h2>Where Would You Like to Begin?</h2>
+<p>Choose one of four Central Asian countries to explore its traditional foods. Pick a dish to discover its ingredients, how it is prepared, and the traditions that make it special.</p>
+</section>
+<section aria-labelledby="selection-heading" class="country-selection">
+<h2 id="selection-heading">Explore by Country</h2>
+<p aria-live="polite" id="status-message" role="status">
                 Checking your account...
             </p>
-
-            <div class="auth-gate" id="explore-signin" hidden>
-                <p>Sign in or create a free account to view the foods stored in Firebase.</p>
-                <button type="button" data-login-open>Log In or Sign Up</button>
-            </div>
-
-            <div id="selection-container" class="country-grid">
-                <!-- JavaScript will add country and food buttons here. -->
-            </div>
-
-        </section>
-
-        <section id="details-section"
-            class="food-details"
-            aria-labelledby="details-heading"
-            hidden>
-
-            <h2 id="details-heading">Food Details</h2>
-
-            <div id="details-container">
-                <!-- JavaScript will display food information here. -->
-            </div>
-
-        </section>
-
-        <div class="page-navigation">
-            <button id="back-button" type="button" hidden>
+<div class="auth-gate" hidden="" id="explore-signin">
+<p>Create a free account or sign in to browse our collection of traditional dishes.</p>
+<button data-login-open="" type="button">Sign In or Create an Account</button>
+</div>
+<div class="country-grid" id="selection-container">
+<!-- JavaScript will add country and food buttons here. -->
+</div>
+</section>
+<section aria-labelledby="details-heading" class="food-details" hidden="" id="details-section">
+<h2 id="details-heading">Discover This Dish</h2>
+<div id="details-container">
+<!-- JavaScript will display food information here. -->
+</div>
+</section>
+<div class="page-navigation">
+<button hidden="" id="back-button" type="button">
                 Back
             </button>
-
-            <button id="restart-button" type="button" hidden>
+<button hidden="" id="restart-button" type="button">
                 Choose Another Country
             </button>
-        </div>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Central Asian Culture &amp; Cuisine</p>
-        <p>Created by Gabe Heffner</p>
-    </footer>
-
+</div>
+</main>
+<footer>
+<p>© 2026 Central Asian Culture &amp; Cuisine</p>
+<p>Created by Gabe Heffner</p>
+</footer>
 </body>
-
 </html>

@@ -1,93 +1,57 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Gabe Heffner">
-    <meta name="description"
-        content="Explore Central Asian culture and cuisine through Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan.">
-    <meta name="keywords"
-        content="Central Asia, Kazakhstan, Kyrgyzstan, Turkmenistan, Uzbekistan, culture, cuisine, traditional food">
-
-    <title>Central Asian Culture &amp; Cuisine</title>
-
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
-
-    <script type="module" src="js/auth-ui.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Gabe Heffner" name="author"/>
+<meta content="Explore Central Asian culture and cuisine through Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan." name="description"/>
+<meta content="Central Asia, Kazakhstan, Kyrgyzstan, Turkmenistan, Uzbekistan, culture, cuisine, traditional food" name="keywords"/>
+<title>Central Asian Culture &amp; Cuisine</title>
+<link href="img/favicon.png" rel="icon" type="image/png"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script src="js/auth-ui.js" type="module"></script>
 </head>
-
 <body>
-
-    <header>
-        <h1>Central Asian Culture &amp; Cuisine</h1>
-        <p>Explore the food and culture of Central Asia</p>
-    </header>
-
-    <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="explore.html">Explore Foods</a>
-        <a href="culture.html">Culture</a>
-        <a href="contact.html">Contact</a>
-        <button type="button" class="nav-login" data-login-open aria-haspopup="dialog">Log In</button>
-    </nav>
-
-    <main>
-
-        <section class="intro">
-            <h2>Explore Central Asia</h2>
-
-            <p>
-                Discover traditional foods and cultural connections
-                from Kazakhstan, Kyrgyzstan, Turkmenistan, and
-                Uzbekistan.
-            </p>
-
-            <p>
-                Sign in to access our Firebase-backed Explore Foods page and choose a country
-                and discover its traditional dishes.
-            </p>
-        </section>
-
-        <figure class="featured-image">
-            <img src="img/central-asia-map.png"
-                alt="Map showing countries in Central Asia">
-
-            <figcaption>
+<header>
+<h1>Central Asian Culture &amp; Cuisine</h1>
+<p>Discover the flavors, traditions, and stories of Central Asia.</p>
+</header>
+<nav aria-label="Main navigation" class="site-nav">
+<a aria-current="page" href="index.html">Home</a>
+<a href="explore.html">Explore Foods</a>
+<a href="culture.html">Culture</a>
+<a href="contact.html">Contact</a>
+<button aria-haspopup="dialog" class="nav-login" data-login-open="" type="button">Log In</button>
+</nav>
+<main>
+<section class="intro">
+<h2>Four Countries. A World of Flavor.</h2>
+<p>From mountain villages to historic Silk Road cities, Central Asia is home to rich traditions and unforgettable food. Discover Kazakhstan, Kyrgyzstan, Turkmenistan, and Uzbekistan through the dishes and stories that make each place unique.</p>
+<p>Explore local favorites, learn how they are prepared, and discover the traditions behind every bite.</p>
+</section>
+<figure class="featured-image">
+<img alt="Map showing countries in Central Asia" src="img/central-asia-map.png"/>
+<figcaption>
                 Map of Central Asia.
                 <cite>Wikimedia Commons</cite>
-            </figcaption>
-        </figure>
-
-        <section class="intro">
-            <h2>Start Exploring</h2>
-
-            <p>
-                Learn about traditional foods from Kazakhstan,
-                Kyrgyzstan, Turkmenistan, and Uzbekistan.
-                Select a country and then choose a dish to
-                discover its ingredients and cultural significance. Account sign-in is required for the interactive explorer and contact submissions.
-            </p>
-
-            <a class="primary-link" href="explore.html">
-                Explore Traditional Foods
-            </a>
-        </section>
-
-        <section class="intro" aria-labelledby="firebase-heading">
-            <h2 id="firebase-heading">Project 5: Powered by Firebase</h2>
-            <p>Create an account or sign in to explore foods loaded from Cloud Firestore, then send feedback that's safely stored in the database.</p>
-            <button type="button" data-login-open>Get Started: Log In or Sign Up</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Central Asian Culture &amp; Cuisine</p>
-        <p>Created by Gabe Heffner</p>
-    </footer>
-
+</figcaption>
+</figure>
+<section class="intro">
+<h2>Find Your Next Favorite Dish</h2>
+<p>Choose a country, browse its traditional dishes, and explore their ingredients, preparation, and cultural importance. Create a free account to access the interactive food guide.</p>
+<a class="primary-link" href="explore.html">Browse Traditional Foods</a>
+</section>
+<section aria-labelledby="join-heading" class="intro">
+<h2 id="join-heading">Join the Journey</h2>
+<p>Curious to explore more? Create a free account to discover our food guide and share your questions or suggestions with us.</p>
+<button data-login-open="" type="button">Sign In or Create an Account</button>
+</section>
+</main>
+<footer>
+<p>© 2026 Central Asian Culture &amp; Cuisine</p>
+<p>Created by Gabe Heffner</p>
+</footer>
 </body>
-
 </html>
+
