@@ -470,4 +470,41 @@ select:focus-visible, textarea:focus-visible, .login-dialog:focus-visible {
     .contact-form input, .contact-form select { min-height: 52px; }
     .dish-image { height: 240px; }
 }
+.culture-image-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #ddd4c5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
 
+.culture-image-block img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.culture-image-text h2 {
+    margin-top: 0;
+    color: #583522;
+}
+
+@media (min-width: 800px) {
+    .culture-image-block {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .culture-image-block.reverse img {
+        order: 2;
+    }
+
+    .culture-image-block.reverse .culture-image-text {
+        order: 1;
+    }
+}
